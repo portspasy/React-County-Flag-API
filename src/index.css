@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 ul {
   list-style-type: none;
   display: flex;

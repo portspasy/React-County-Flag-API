@@ -18,9 +18,9 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div>
-      <Header />
+    <div className="App">
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <HomePage />
@@ -39,8 +39,9 @@ const App = () => {
             <Error404 />
           </Route>
         </Switch>
+
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 };
