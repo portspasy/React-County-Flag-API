@@ -1,6 +1,8 @@
 import React from "react";
 import "./Signup.scss";
 
+import FormInput from "../form-input/FormInput";
+
 class SignUp extends React.Component {
   state = {
     displayName: "",
@@ -31,53 +33,44 @@ class SignUp extends React.Component {
         <span>Sign up with your email and password.</span>
 
         <form className="sign-in-form" onSubmit={this.handleSubmit}>
-          <label>
-            Username:
-            <input
-              name="displayName"
-              type="text"
-              value={this.state.displayName}
-              onChange={this.handleChange}
-              label="Username"
-              required
-            />
-          </label>
-          <label>
-            Email:
-            <input
-              name="email"
-              type="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-              label="email"
-              required
-            />
-          </label>
-          <label>
-            Password:
-            <input
-              name="password"
-              type="password"
-              value={this.state.password}
-              onChange={this.handleChange}
-              label="password"
-              required
-            />
-          </label>
-          <label>
-            Confirm Password:
-            <input
-              name="confirmPassword"
-              type="password"
-              value={this.state.confirmPassword}
-              onChange={this.handleChange}
-              label="Confirm Password"
-              required
-            />
-          </label>
+          <FormInput
+            name="displayName"
+            type="text"
+            value={this.state.displayName}
+            onChange={this.handleChange}
+            label="Username"
+            required
+          />
+
+          <FormInput
+            name="email"
+            type="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+            label="email"
+            required
+          />
+
+          <FormInput
+            name="password"
+            type="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+            label="password"
+            required
+          />
+
+          <FormInput
+            name="confirmPassword"
+            type="password"
+            value={this.state.confirmPassword}
+            onChange={this.handleChange}
+            label="Confirm Password"
+            required
+          />
 
           <div className="buttons">
-          <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" />
           </div>
         </form>
       </div>
