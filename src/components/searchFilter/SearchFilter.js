@@ -4,7 +4,7 @@ import "./SearchFilter.scss";
 const SearchFilter = () => {
   return (
     <div className="search-filter">
-      <p>Search Filter Comp.</p>
+      <input type="text" placeholder="Search for a country..." />
     </div>
   );
 };

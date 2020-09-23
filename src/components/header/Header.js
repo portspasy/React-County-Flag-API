@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <Link to="/">Where in the world</Link>
-      <div class="mode-container">Dark Mode</div>
+      <div className="mode-container">Dark Mode</div>
     </div>
   );
 };
